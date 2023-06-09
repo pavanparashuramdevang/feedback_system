@@ -5,8 +5,8 @@ import smtplib
 
 def send_otp(reciver,otp):
     otp=str(otp)
-    email_sender="pavanparashuramdevang2@gmail.com"
-    email_password='bahuyeaifeslmwyz'
+    email_sender="your email address"
+    email_password='your email API key from google'
     email_receiver=reciver
 
     subject="OTP for student login GECM"
