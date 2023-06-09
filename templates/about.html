@@ -1,0 +1,50 @@
+{%extends 'base.html'%}
+
+
+
+{% block active %}
+
+<li ><a href="{{url_for('home') }}">Home</a></li>
+<li class="active"><a href="{{url_for('about')}}">About</a></li>
+
+{%endblock%}
+
+
+{%block form%}
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="about-section paddingTB60 gray-bg">
+                <div class="container">
+                    <div class="row">
+						<div class="col-md-7 col-sm-6">
+							<div class="about-title clearfix">
+								<h1>About <span style="color: black;">GECM<span style="color:red">Feedback</span></span></h1>
+								<h3>A Portal Where GECM Students Can Provide Feedback Anonymously </h3>
+								<p class="about-paddingB"> This portal/website is designed in a way where students can login to the website and authenticate using OTP provided to the email and this is done just to ensure the authenticity of the user </p>
+							
+						<div class="about-icons"> 
+                            <ul >
+                                <li><a href="https://www.facebook.com/"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a> </li>
+                                <li><a href="https://twitter.com/"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a> </li>
+
+                                <li> <a href="mailto:abc@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a> </li>
+                            </ul>       
+               
+               
+	           
+	           
+	        
+	        </div>
+							</div>
+						</div>
+						<div class="col-md-5 col-sm-6">
+							<div class="about-img">
+								<img src="https://devitems.com/preview/appmom/img/mobile/2.png" alt="">
+							</div>
+						</div>	
+                    </div>
+                </div>
+            </div>
+
+
+{%endblock form %}

@@ -1,0 +1,12 @@
+this is a flask project for college's feedback system
+where it has simple thing first it need to authenticate the user and then it need to get the user feedback annonimusly
+
+I think I'm documenting the whole process I don't know how successful I'll be at the end of it 
+
+create a virtual environment
+
+$ virtualenv env
+
+activate environment
+
+$source env/bin/activate

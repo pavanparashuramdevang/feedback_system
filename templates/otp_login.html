@@ -1,0 +1,131 @@
+{%extends 'base.html'%}
+
+{%block style%}
+
+<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+
+
+
+<style>
+
+    * {
+      box-sizing: border-box;
+    }
+    
+    input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+    }
+    
+    label {
+      padding: 12px 12px 12px 0;
+      display: inline-block;
+    }
+    
+    input[type=submit] {
+      background-color: #04AA6D;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      float: right;
+    }
+    
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+    
+    .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+    
+    .col-25 {
+      float: left;
+      width: 25%;
+      margin-top: 6px;
+    }
+    
+    .col-75 {
+      float: left;
+      width: 75%;
+      margin-top: 6px;
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+      }
+    }
+    
+    </style>
+
+
+{%endblock%}
+
+
+
+{% block active %}
+
+<li ><a href="{{url_for('home') }}">Home</a></li>
+<li ><a href="{{url_for('about')}}">About</a></li>
+
+{%endblock%}
+
+
+{%block form%}
+<h1 style="padding: 30px;"></h1>  
+    {% if email%}
+    <h1>OTP sent to email: {{email}}</h1>
+    {%else%}
+    <h1></h1>
+    {%endif%}
+    <h1>PLEASE LOGIN USING OTP </h1>
+<!-- 
+    <div class="form_container_index">
+        <form action="" method="POST">
+            <div class="form-group"></div>
+            <label for="otp">OTP : </label><br>
+            <input type="text" name="otp">
+            <input type="submit" class="btn btn-primary" value="Submit">
+        
+ 
+    </div> -->
+
+
+    <div class="container">
+        <form action="" method="POST">
+          <div class="row">
+            <div class="col-25">
+              <label for="fname">OTP : </label><br>
+            </div>
+            <div class="col-75">
+              <input type="text" id="fname" name="otp" placeholder="OTP" required> 
+            </div>
+          </div>
+    
+          <div class="row">
+            <div style="margin: 5px;padding: 2px;">
+            <input type="submit" value="Submit">
+            </div>
+          </div>
+        </form>
+      </div>
+
+
+    {% endblock form%}
