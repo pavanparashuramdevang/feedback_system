@@ -28,4 +28,16 @@ This also have a Email authentication system for security but the feedback is st
 ## TABLE IMAGE
 ![TABLE IMAGE](https://github.com/pavanparashuramdevang/feedback_system/blob/main/snapshots/image_db_2.png?raw=true)
 
+# Installation
+To run the app in your own system use a linux machine as it was created in linux(ubuntu) I don't know how it works in windows
+
+Install mysql and mysql connector for python to provide the interface between python and database as i have used mysql for database
+
+run db_connect.py to make the connection to your database in db_connect.py change the user name and password to your mysql username and password
+
+run all the files that ends with model.py as thes creates the database table you may need to run it
+
+install all the dependencies and run app.py
+
+
 
